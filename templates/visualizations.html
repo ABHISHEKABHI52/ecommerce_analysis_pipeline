@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations - E-Commerce Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            background: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .visualizations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .viz-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .viz-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .viz-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualizations</h1>
+            <p>Professional Charts and Graphs</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="/">Dashboard</a></li>
+                <li><a href="/data">Data Explorer</a></li>
+                <li><a href="/visualizations">Visualizations</a></li>
+                <li><a href="/analysis">Analysis Report</a></li>
+            </ul>
+        </nav>
+        
+        <div class="visualizations-grid">
+            {% if images['top_products.png'] %}
+            <div class="viz-card">
+                <h3>Top 10 Highest-Rated Products</h3>
+                <img src="{{ images['top_products.png'] }}" alt="Top Products">
+            </div>
+            {% endif %}
+            
+            {% if images['price_distribution.png'] %}
+            <div class="viz-card">
+                <h3>Price Distribution</h3>
+                <img src="{{ images['price_distribution.png'] }}" alt="Price Distribution">
+            </div>
+            {% endif %}
+            
+            {% if images['price_vs_rating.png'] %}
+            <div class="viz-card">
+                <h3>Price vs Rating Analysis</h3>
+                <img src="{{ images['price_vs_rating.png'] }}" alt="Price vs Rating">
+            </div>
+            {% endif %}
+            
+            {% if images['category_distribution.png'] %}
+            <div class="viz-card">
+                <h3>Category Distribution</h3>
+                <img src="{{ images['category_distribution.png'] }}" alt="Category Distribution">
+            </div>
+            {% endif %}
+        </div>
+        
+        <footer>
+            <p>E-Commerce Product Analysis Pipeline | 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

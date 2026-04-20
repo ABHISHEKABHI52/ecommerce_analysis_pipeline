@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-analysis-app",
+  "description": "E-Commerce Product Analysis Dashboard",
+  "region": "us",
+  "services": [
+    {
+      "name": "web",
+      "plan": "free"
+    }
+  ]
+}

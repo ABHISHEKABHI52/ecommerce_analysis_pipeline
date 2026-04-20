@@ -1,0 +1,113 @@
+================================================================================
+E-COMMERCE PRODUCT ANALYSIS REPORT
+================================================================================
+
+Generated: 2026-04-20 12:27:32
+Total Products Analyzed: 20
+Categories: 1
+Average Rating: 2.85/5.0
+Average Price: $38.05
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+
+1. Most Expensive Category: Books (Avg: $38.05)
+
+2. Best Value Category: Books (Avg: $38.05)
+
+3. Price-Rating Relationship: No significant correlation - price and rating are independent (Correlation: -0.076)
+
+4. Average Product Rating: 2.85/5.0 (Dataset maturity indicator)
+
+5. Product Price Range: $13.99 - $57.25 (Market span)
+
+6. Most Popular Product: Mesaerion: The Best Science Fiction Stories 1800-1849 (482 reviews)
+
+7. High-Rated Affordable Options: 3 products (Rating >=4.0 and Price in bottom 25%)
+
+================================================================================
+TOP 10 HIGHEST-RATED PRODUCTS
+================================================================================
+ 5. Sapiens: A Brief History of Humankind | Rating: 5.0/5 | Price: $54.23
+13. Set Me Free | Rating: 5.0/5 | Price: $17.46
+14. Scott Pilgrim's Precious Little Life (Scott Pilgri | Rating: 5.0/5 | Price: $52.29
+15. Rip it Up and Start Again | Rating: 5.0/5 | Price: $35.02
+ 4. Sharp Objects | Rating: 4.0/5 | Price: $47.82
+ 7. The Dirty Little Secrets of Getting Your Dream Job | Rating: 4.0/5 | Price: $33.34
+ 9. The Boys in the Boat: Nine Americans and Their Epi | Rating: 4.0/5 | Price: $22.60
+12. Shakespeare's Sonnets | Rating: 4.0/5 | Price: $20.66
+ 1. A Light in the Attic | Rating: 3.0/5 | Price: $51.77
+ 8. The Coming Woman: A Novel Based on the Life of the | Rating: 3.0/5 | Price: $17.93
+
+================================================================================
+TOP 10 MOST EXPENSIVE PRODUCTS
+================================================================================
+16. Our Band Could Be Your Life: Scenes from the Ameri | Price: $57.25 | Rating: 3.0/5
+ 5. Sapiens: A Brief History of Humankind | Price: $54.23 | Rating: 5.0/5
+ 2. Tipping the Velvet | Price: $53.74 | Rating: 1.0/5
+14. Scott Pilgrim's Precious Little Life (Scott Pilgri | Price: $52.29 | Rating: 5.0/5
+10. The Black Maria | Price: $52.15 | Rating: 1.0/5
+ 1. A Light in the Attic | Price: $51.77 | Rating: 3.0/5
+19. Libertarianism for Beginners | Price: $51.33 | Rating: 2.0/5
+ 3. Soumission | Price: $50.10 | Rating: 1.0/5
+ 4. Sharp Objects | Price: $47.82 | Rating: 4.0/5
+20. It's Only the Himalayas | Price: $45.17 | Rating: 2.0/5
+
+================================================================================
+TOP 10 BEST VALUE PRODUCTS (High Rating + Low Price)
+================================================================================
+13. Set Me Free | Price: $17.46 | Rating: 5.0/5 | Category: Books
+12. Shakespeare's Sonnets | Price: $20.66 | Rating: 4.0/5 | Category: Books
+ 9. The Boys in the Boat: Nine Americans and Their Epi | Price: $22.60 | Rating: 4.0/5 | Category: Books
+15. Rip it Up and Start Again | Price: $35.02 | Rating: 5.0/5 | Category: Books
+ 8. The Coming Woman: A Novel Based on the Life of the | Price: $17.93 | Rating: 3.0/5 | Category: Books
+11. Starving Hearts (Triangular Trade Trilogy, #1) | Price: $13.99 | Rating: 2.0/5 | Category: Books
+ 7. The Dirty Little Secrets of Getting Your Dream Job | Price: $33.34 | Rating: 4.0/5 | Category: Books
+ 4. Sharp Objects | Price: $47.82 | Rating: 4.0/5 | Category: Books
+14. Scott Pilgrim's Precious Little Life (Scott Pilgri | Price: $52.29 | Rating: 5.0/5 | Category: Books
+ 5. Sapiens: A Brief History of Humankind | Price: $54.23 | Rating: 5.0/5 | Category: Books
+
+================================================================================
+CATEGORY-WISE ANALYSIS
+================================================================================
+
+Books:
+  - Count: 20
+  - Avg Price: $38.05
+  - Avg Rating: 2.85/5.0
+  - Price Range: $13.99 - $57.25
+
+================================================================================
+STATISTICAL SUMMARY
+================================================================================
+
+Price Statistics:
+  - Min: $13.99
+  - Max: $57.25
+  - Mean: $38.05
+  - Median: $41.38
+  - Std Dev: $15.14
+
+Rating Statistics:
+  - Min: 1.0
+  - Max: 5.0
+  - Mean: 2.85
+  - Median: 3.0
+
+Review Statistics:
+  - Avg Reviews per Product: 269
+  - Most Reviewed: 482
+
+================================================================================
+FILES GENERATED
+================================================================================
+  1. products_raw.csv - Raw collected data
+  2. products_clean.csv - Cleaned and processed data
+  3. analysis_summary.txt - This report
+  4. outputs/top_products.png - Top 10 highest-rated products
+  5. outputs/price_distribution.png - Price distribution histogram
+  6. outputs/price_vs_rating.png - Scatter plot analysis
+  7. outputs/category_distribution.png - Category pie chart
+
+================================================================================
