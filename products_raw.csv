@@ -1,21 +1,251 @@
 Product Name,Price,Rating,Category,Number of Reviews
-A Light in the Attic,51.77,3,Books,450
-Tipping the Velvet,53.74,1,Books,421
-Soumission,50.1,1,Books,450
-Sharp Objects,47.82,4,Books,198
-Sapiens: A Brief History of Humankind,54.23,5,Books,312
-The Requiem Red,22.65,1,Books,475
-The Dirty Little Secrets of Getting Your Dream Job,33.34,4,Books,335
-"The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",17.93,3,Books,36
-The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics,22.6,4,Books,344
-The Black Maria,52.15,1,Books,30
-"Starving Hearts (Triangular Trade Trilogy, #1)",13.99,2,Books,159
-Shakespeare's Sonnets,20.66,4,Books,447
-Set Me Free,17.46,5,Books,87
-Scott Pilgrim's Precious Little Life (Scott Pilgrim #1),52.29,5,Books,372
-Rip it Up and Start Again,35.02,5,Books,181
-"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",57.25,3,Books,163
-Olio,23.88,1,Books,313
-Mesaerion: The Best Science Fiction Stories 1800-1849,37.59,1,Books,482
-Libertarianism for Beginners,51.33,2,Books,44
-It's Only the Himalayas,45.17,2,Books,78
+A Light in the Attic,51.77,3.0,Books,237
+Tipping the Velvet,53.74,1.0,Books,361
+Soumission,50.1,1.0,Books,316
+Sharp Objects,47.82,4.0,Books,327
+Sapiens: A Brief History of Humankind,54.23,5.0,Books,73
+The Requiem Red,22.65,1.0,Books,360
+The Dirty Little Secrets of Getting Your Dream Job,33.34,4.0,Books,388
+"The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",17.93,3.0,Books,21
+The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics,22.6,4.0,Books,34
+The Black Maria,52.15,1.0,Books,477
+"Starving Hearts (Triangular Trade Trilogy, #1)",13.99,2.0,Books,479
+Shakespeare's Sonnets,20.66,4.0,Books,245
+Set Me Free,17.46,5.0,Books,376
+Scott Pilgrim's Precious Little Life (Scott Pilgrim #1),52.29,5.0,Books,266
+Rip it Up and Start Again,35.02,5.0,Books,297
+"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",57.25,3.0,Books,328
+Olio,23.88,1.0,Books,182
+Mesaerion: The Best Science Fiction Stories 1800-1849,37.59,1.0,Books,263
+Libertarianism for Beginners,51.33,2.0,Books,354
+It's Only the Himalayas,45.17,2.0,Books,33
+Sports Basic 1,182.7,3.7,Sports,137
+Sports Elite 2,88.84,3.2,Sports,111
+Furniture Basic 3,249.92,2.5,Furniture,277
+Furniture Elite 4,250.83,3.7,Furniture,342
+Electronics Pro 5,114.67,2.5,Electronics,55
+Sports Elite 6,64.07,3.1,Sports,99
+Automotive Standard 7,321.7,4.0,Automotive,47
+Toys Premium 8,36.66,3.3,Toys,157
+Home & Garden Premium 9,298.28,3.8,Home & Garden,5
+Automotive Premium 10,164.34,3.7,Automotive,358
+Automotive Pro 11,239.6,4.2,Automotive,248
+Sports Standard 12,272.68,4.6,Sports,196
+Food & Beverages Deluxe 13,8.16,4.6,Food & Beverages,565
+Home & Garden Basic 14,251.07,3.4,Home & Garden,461
+Books Pro 15,24.49,3.5,Books,286
+Toys Pro 16,43.51,3.8,Toys,474
+Clothing Standard 17,140.57,5.0,Clothing,22
+Home & Garden Ultra 18,434.22,4.2,Home & Garden,235
+Sports Standard 19,198.24,3.0,Sports,221
+Automotive Deluxe 20,23.75,2.4,Automotive,196
+Beauty Standard 21,174.67,4.5,Beauty,285
+Electronics Elite 22,423.87,2.7,Electronics,484
+Furniture Ultra 23,505.64,3.6,Furniture,270
+Automotive Elite 24,306.15,4.8,Automotive,423
+Toys Basic 25,17.32,3.0,Toys,370
+Food & Beverages Elite 26,6.58,2.0,Food & Beverages,262
+Home & Garden Standard 27,134.6,3.8,Home & Garden,292
+Sports Standard 28,22.52,3.1,Sports,214
+Furniture Elite 29,58.22,2.2,Furniture,157
+Furniture Premium 30,162.01,3.5,Furniture,230
+Clothing Premium 31,118.48,4.4,Clothing,673
+Toys Classic 32,48.86,3.6,Toys,182
+Food & Beverages Standard 33,8.19,2.2,Food & Beverages,238
+Home & Garden Basic 34,266.84,1.9,Home & Garden,82
+Beauty Standard 35,118.65,4.1,Beauty,40
+Beauty Ultra 36,13.44,2.5,Beauty,248
+Home & Garden Premium 37,262.71,3.2,Home & Garden,117
+Books Pro 38,41.17,4.5,Books,268
+Electronics Ultra 39,630.36,3.7,Electronics,5
+Books Ultra 40,46.56,4.5,Books,156
+Clothing Elite 41,100.36,4.5,Clothing,394
+Toys Basic 42,43.58,3.3,Toys,42
+Toys Pro 43,34.21,3.8,Toys,248
+Beauty Ultra 44,107.04,3.1,Beauty,160
+Clothing Pro 45,77.45,2.2,Clothing,64
+Automotive Classic 46,189.53,3.3,Automotive,335
+Toys Classic 47,78.42,3.6,Toys,293
+Furniture Elite 48,1619.78,4.7,Furniture,466
+Food & Beverages Pro 49,41.32,4.9,Food & Beverages,576
+Electronics Basic 50,613.58,4.6,Electronics,255
+Beauty Ultra 51,11.09,2.5,Beauty,177
+Automotive Ultra 52,132.09,4.2,Automotive,159
+Clothing Basic 53,16.63,3.4,Clothing,361
+Sports Ultra 54,275.75,3.8,Sports,308
+Toys Pro 55,96.93,4.1,Toys,611
+Food & Beverages Basic 56,9.85,2.3,Food & Beverages,237
+Toys Basic 57,50.74,3.0,Toys,317
+Sports Elite 58,275.6,4.7,Sports,365
+Clothing Standard 59,130.47,5.0,Clothing,552
+Sports Elite 60,22.7,1.8,Sports,268
+Food & Beverages Standard 61,36.05,4.1,Food & Beverages,247
+Furniture Premium 62,769.68,2.9,Furniture,267
+Beauty Ultra 63,53.87,3.5,Beauty,435
+Electronics Basic 64,153.03,3.4,Electronics,284
+Toys Pro 65,12.31,2.9,Toys,259
+Clothing Standard 66,66.63,3.2,Clothing,105
+Automotive Premium 67,289.35,3.9,Automotive,492
+Food & Beverages Classic 68,19.97,3.7,Food & Beverages,373
+Home & Garden Pro 69,266.62,3.0,Home & Garden,455
+Books Standard 70,42.61,3.9,Books,121
+Toys Basic 71,26.09,3.3,Toys,5
+Toys Premium 72,28.97,3.1,Toys,251
+Electronics Elite 73,808.3,3.9,Electronics,42
+Furniture Deluxe 74,1364.02,4.8,Furniture,716
+Clothing Ultra 75,50.75,2.7,Clothing,403
+Food & Beverages Pro 76,38.75,4.8,Food & Beverages,485
+Food & Beverages Basic 77,4.1,2.2,Food & Beverages,322
+Food & Beverages Standard 78,23.29,3.4,Food & Beverages,134
+Sports Elite 79,264.65,4.7,Sports,338
+Home & Garden Elite 80,428.65,3.7,Home & Garden,342
+Toys Classic 81,35.37,3.9,Toys,461
+Furniture Classic 82,1157.17,2.5,Furniture,410
+Sports Classic 83,141.59,3.1,Sports,185
+Clothing Classic 84,73.27,4.3,Clothing,417
+Sports Premium 85,100.08,3.0,Sports,389
+Furniture Ultra 86,212.02,1.4,Furniture,521
+Toys Elite 87,12.05,2.2,Toys,354
+Clothing Elite 88,59.16,4.0,Clothing,321
+Books Standard 89,34.5,4.3,Books,314
+Home & Garden Ultra 90,260.27,4.9,Home & Garden,353
+Sports Ultra 91,51.13,3.5,Sports,198
+Toys Pro 92,59.11,3.7,Toys,532
+Clothing Pro 93,84.13,4.0,Clothing,21
+Furniture Basic 94,485.68,2.4,Furniture,243
+Sports Standard 95,28.61,2.2,Sports,466
+Furniture Basic 96,1061.99,4.2,Furniture,211
+Books Premium 97,42.47,3.5,Books,204
+Toys Ultra 98,82.29,4.2,Toys,330
+Beauty Basic 99,149.14,4.0,Beauty,186
+Food & Beverages Elite 100,25.43,4.0,Food & Beverages,283
+Food & Beverages Basic 1,2.63,2.7,Food & Beverages,328
+Food & Beverages Elite 2,4.32,2.5,Food & Beverages,335
+Beauty Elite 3,56.73,3.4,Beauty,127
+Automotive Deluxe 4,412.34,5.0,Automotive,246
+Food & Beverages Ultra 5,32.57,4.0,Food & Beverages,399
+Automotive Ultra 6,159.83,3.7,Automotive,390
+Books Premium 7,16.55,2.1,Books,390
+Automotive Pro 8,155.81,3.1,Automotive,358
+Electronics Elite 9,497.32,2.9,Electronics,74
+Home & Garden Elite 10,426.16,4.5,Home & Garden,314
+Beauty Deluxe 11,51.87,3.3,Beauty,85
+Electronics Standard 12,712.7,3.7,Electronics,276
+Sports Elite 13,183.49,3.5,Sports,366
+Home & Garden Deluxe 14,146.51,3.0,Home & Garden,292
+Books Basic 15,14.6,3.6,Books,294
+Books Premium 16,21.03,3.5,Books,308
+Furniture Ultra 17,1728.27,3.0,Furniture,262
+Electronics Deluxe 18,804.51,4.6,Electronics,447
+Books Deluxe 19,20.87,3.2,Books,240
+Books Elite 20,25.95,2.8,Books,208
+Home & Garden Standard 21,341.82,4.0,Home & Garden,208
+Furniture Ultra 22,1288.19,3.0,Furniture,46
+Food & Beverages Ultra 23,41.96,3.8,Food & Beverages,426
+Beauty Basic 24,28.64,2.9,Beauty,328
+Home & Garden Premium 25,492.83,4.7,Home & Garden,406
+Sports Classic 26,204.71,3.6,Sports,69
+Sports Elite 27,248.41,3.5,Sports,180
+Electronics Standard 28,883.97,4.8,Electronics,433
+Clothing Ultra 29,90.43,2.6,Clothing,376
+Books Premium 30,41.39,4.5,Books,116
+Food & Beverages Basic 31,4.25,2.3,Food & Beverages,156
+Furniture Deluxe 32,1013.56,3.1,Furniture,129
+Home & Garden Classic 33,85.72,2.3,Home & Garden,259
+Clothing Deluxe 34,23.63,2.4,Clothing,577
+Electronics Pro 35,293.95,1.9,Electronics,156
+Beauty Classic 36,101.56,3.5,Beauty,391
+Food & Beverages Classic 37,32.53,3.8,Food & Beverages,432
+Food & Beverages Elite 38,48.34,4.6,Food & Beverages,544
+Clothing Basic 39,89.68,2.7,Clothing,350
+Sports Standard 40,281.28,4.3,Sports,363
+Toys Pro 41,10.19,2.7,Toys,547
+Toys Pro 42,82.49,4.3,Toys,25
+Electronics Pro 43,808.82,4.6,Electronics,418
+Home & Garden Deluxe 44,404.71,4.7,Home & Garden,366
+Furniture Premium 45,418.11,2.3,Furniture,418
+Home & Garden Elite 46,78.03,2.7,Home & Garden,213
+Furniture Standard 47,1307.49,4.3,Furniture,309
+Toys Elite 48,57.67,3.6,Toys,308
+Books Classic 49,12.72,3.6,Books,244
+Food & Beverages Premium 50,1.39,2.8,Food & Beverages,183
+Toys Standard 51,71.01,3.7,Toys,220
+Beauty Elite 52,131.12,3.3,Beauty,495
+Food & Beverages Elite 53,2.37,1.8,Food & Beverages,363
+Beauty Pro 54,89.13,4.1,Beauty,136
+Sports Premium 55,37.52,2.2,Sports,134
+Furniture Ultra 56,1782.4,4.6,Furniture,427
+Clothing Elite 57,107.88,3.1,Clothing,388
+Beauty Standard 58,26.08,3.7,Beauty,693
+Toys Pro 59,25.19,3.1,Toys,357
+Clothing Deluxe 60,75.11,3.9,Clothing,230
+Furniture Classic 61,975.16,3.7,Furniture,265
+Books Premium 62,26.91,4.6,Books,351
+Clothing Standard 63,50.66,3.0,Clothing,175
+Books Premium 64,44.01,4.5,Books,292
+Home & Garden Elite 65,20.34,1.8,Home & Garden,289
+Beauty Ultra 66,80.06,3.4,Beauty,150
+Sports Pro 67,128.99,3.3,Sports,445
+Toys Ultra 68,50.5,3.2,Toys,206
+Home & Garden Standard 69,404.18,4.8,Home & Garden,485
+Home & Garden Pro 70,179.39,3.3,Home & Garden,428
+Sports Classic 71,173.92,3.8,Sports,312
+Home & Garden Pro 72,499.26,4.2,Home & Garden,522
+Automotive Premium 73,145.04,2.8,Automotive,248
+Electronics Basic 74,50.25,3.0,Electronics,199
+Toys Classic 75,43.79,3.3,Toys,302
+Clothing Classic 76,114.2,4.5,Clothing,315
+Sports Classic 77,153.31,4.2,Sports,361
+Clothing Basic 78,84.56,3.3,Clothing,540
+Electronics Elite 79,297.63,3.0,Electronics,307
+Sports Basic 80,172.64,3.8,Sports,245
+Automotive Classic 81,447.53,4.0,Automotive,153
+Sports Pro 82,293.74,5.0,Sports,27
+Automotive Premium 83,337.59,3.3,Automotive,66
+Home & Garden Deluxe 84,365.32,3.8,Home & Garden,458
+Furniture Standard 85,1378.52,3.1,Furniture,309
+Clothing Deluxe 86,36.2,3.6,Clothing,160
+Automotive Ultra 87,80.58,3.2,Automotive,162
+Home & Garden Elite 88,309.59,2.6,Home & Garden,58
+Electronics Premium 89,195.7,2.5,Electronics,282
+Furniture Standard 90,895.32,3.7,Furniture,218
+Clothing Elite 91,58.19,3.3,Clothing,127
+Furniture Deluxe 92,865.37,4.2,Furniture,211
+Sports Basic 93,54.37,3.3,Sports,378
+Home & Garden Deluxe 94,491.81,4.6,Home & Garden,269
+Books Ultra 95,42.07,3.9,Books,375
+Sports Deluxe 96,104.88,3.0,Sports,421
+Automotive Premium 97,418.23,3.6,Automotive,472
+Beauty Basic 98,196.07,4.4,Beauty,256
+Toys Pro 99,75.73,3.6,Toys,229
+Toys Ultra 100,86.85,3.8,Toys,147
+Sports Basic 1,160.93,3.8,Sports,290
+Electronics Basic 2,717.21,3.4,Electronics,281
+Furniture Ultra 3,1492.72,5.0,Furniture,654
+Toys Standard 4,7.95,4.0,Toys,564
+Clothing Ultra 5,78.45,3.6,Clothing,358
+Furniture Classic 6,952.22,4.2,Furniture,206
+Furniture Deluxe 7,929.02,4.5,Furniture,241
+Electronics Pro 8,301.27,4.3,Electronics,163
+Electronics Elite 9,248.64,2.5,Electronics,167
+Automotive Premium 10,254.82,3.9,Automotive,276
+Furniture Ultra 11,1563.39,4.8,Furniture,210
+Electronics Premium 12,685.02,4.3,Electronics,118
+Books Premium 13,37.97,4.0,Books,251
+Food & Beverages Premium 14,42.69,3.1,Food & Beverages,244
+Home & Garden Premium 15,434.09,4.9,Home & Garden,284
+Sports Ultra 16,219.95,3.7,Sports,508
+Home & Garden Premium 17,291.49,3.1,Home & Garden,203
+Home & Garden Pro 18,224.78,3.7,Home & Garden,112
+Food & Beverages Ultra 19,2.65,2.4,Food & Beverages,212
+Automotive Pro 20,340.5,3.8,Automotive,5
+Furniture Classic 21,1379.6,4.0,Furniture,383
+Clothing Basic 22,118.3,5.0,Clothing,134
+Sports Standard 23,187.02,4.0,Sports,529
+Beauty Elite 24,112.35,4.0,Beauty,390
+Food & Beverages Basic 25,36.05,4.4,Food & Beverages,542
+Beauty Standard 26,142.75,3.6,Beauty,74
+Electronics Ultra 27,70.29,3.1,Electronics,304
+Furniture Elite 28,1717.69,4.2,Furniture,214
+Beauty Ultra 29,118.26,3.6,Beauty,246
+Books Elite 30,19.49,2.9,Books,213

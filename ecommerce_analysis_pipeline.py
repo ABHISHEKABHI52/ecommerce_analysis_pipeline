@@ -34,12 +34,17 @@ SUMMARY_FILE = SCRIPT_DIR / "analysis_summary.txt"
 
 def collect_data():
     """
-    Auto-fallback system for data collection:
+    Auto-fallback system for data collection with smart scaling:
     1. Try web scraping (books.toscrape.com)
     2. Fallback to FakeStore API
-    3. Last resort: Generate synthetic dataset
+    3. Expand with synthetic data if collected < 200 rows
+    4. Generate synthetic dataset if all above fail
+    Ensures minimum 200-500 products for meaningful analysis
     """
     print("[STEP 1] Data Collection Started...")
+    
+    df = None
+    source = "None"
     
     # Try Web Scraping
     try:
@@ -47,26 +52,38 @@ def collect_data():
         df = scrape_books_data()
         if df is not None and len(df) > 0:
             print(f"  [OK] Successfully scraped {len(df)} products")
-            df.to_csv(RAW_CSV, index=False)
-            return df
+            source = "Web Scraping"
     except Exception as e:
         print(f"  [FAIL] Web scraping failed: {str(e)}")
     
-    # Fallback to API
-    try:
-        print("  --> Attempting FakeStore API...")
-        df = fetch_fakestore_api()
-        if df is not None and len(df) > 0:
-            print(f"  [OK] Successfully fetched {len(df)} products from API")
-            df.to_csv(RAW_CSV, index=False)
-            return df
-    except Exception as e:
-        print(f"  [FAIL] API fetch failed: {str(e)}")
+    # Fallback to API if scraping failed
+    if df is None or len(df) == 0:
+        try:
+            print("  --> Attempting FakeStore API...")
+            df = fetch_fakestore_api()
+            if df is not None and len(df) > 0:
+                print(f"  [OK] Successfully fetched {len(df)} products from API")
+                source = "FakeStore API"
+        except Exception as e:
+            print(f"  [FAIL] API fetch failed: {str(e)}")
     
-    # Last resort: Generate synthetic data
-    print("  --> Generating synthetic dataset...")
-    df = generate_synthetic_data()
-    print(f"  [OK] Generated {len(df)} synthetic products")
+    # Expand with synthetic data if collected data is insufficient
+    if df is not None and len(df) < 200:
+        print(f"  --> Dataset too small ({len(df)} products), augmenting with synthetic data...")
+        synthetic_needed = 250 - len(df)  # Target 250 products
+        synthetic_df = generate_synthetic_data(synthetic_needed)
+        df = pd.concat([df, synthetic_df], ignore_index=True)
+        source = f"{source} + Synthetic Augmentation"
+        print(f"  [OK] Expanded dataset to {len(df)} products")
+    
+    # Generate synthetic data as final fallback
+    if df is None or len(df) == 0:
+        print("  --> Generating complete synthetic dataset (300 products)...")
+        df = generate_synthetic_data(300)
+        source = "Synthetic Data Generation"
+        print(f"  [OK] Generated {len(df)} synthetic products")
+    
+    print(f"  [DATA SOURCE] {source}")
     df.to_csv(RAW_CSV, index=False)
     return df
 
@@ -130,23 +147,56 @@ def fetch_fakestore_api():
     return pd.DataFrame(products)
 
 
-def generate_synthetic_data(num_products=150):
-    """Generate realistic synthetic product dataset"""
+def generate_synthetic_data(num_products=300):
+    """
+    Generate realistic synthetic product dataset with logical relationships:
+    - Higher price products tend to have slightly better ratings
+    - Variation in categories with realistic distributions
+    - Review counts reflect product popularity
+    """
     categories = ['Electronics', 'Clothing', 'Home & Garden', 'Sports', 'Books', 
                   'Beauty', 'Toys', 'Food & Beverages', 'Furniture', 'Automotive']
     
+    # Category-specific price ranges for realism
+    category_ranges = {
+        'Electronics': (50, 1000),
+        'Clothing': (15, 150),
+        'Home & Garden': (10, 500),
+        'Sports': (20, 300),
+        'Books': (5, 50),
+        'Beauty': (10, 200),
+        'Toys': (5, 100),
+        'Food & Beverages': (1, 50),
+        'Furniture': (50, 2000),
+        'Automotive': (20, 500)
+    }
+    
     products = []
+    
     for i in range(num_products):
         category = random.choice(categories)
-        price = round(random.uniform(10, 500), 2)
-        rating = round(random.uniform(2.0, 5.0), 1)
+        min_price, max_price = category_ranges[category]
+        
+        # Generate price with realistic variation
+        price = round(random.uniform(min_price, max_price), 2)
+        
+        # Create logical relationship: higher price → slightly better rating (with randomness)
+        base_rating = 2.5 + (price - min_price) / (max_price - min_price) * 2.2
+        rating = round(max(1.0, min(5.0, base_rating + random.gauss(0, 0.6))), 1)
+        
+        # Review count correlates with popularity (which affects rating distribution)
+        reviews = max(5, int(random.gauss(300, 150)))
+        
+        # Generate realistic product names
+        adjectives = ['Premium', 'Classic', 'Pro', 'Ultra', 'Elite', 'Standard', 'Deluxe', 'Basic']
+        product_type = f"{category} {random.choice(adjectives)} {i%100 + 1}"
         
         products.append({
-            'Product Name': f'{category} Product {i+1}',
+            'Product Name': product_type,
             'Price': price,
             'Rating': rating,
             'Category': category,
-            'Number of Reviews': random.randint(10, 1000)
+            'Number of Reviews': reviews
         })
     
     return pd.DataFrame(products)
