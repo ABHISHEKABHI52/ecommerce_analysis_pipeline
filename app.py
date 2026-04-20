@@ -4,11 +4,10 @@ Flask web application to host and visualize analysis results
 """
 
 from flask import Flask, render_template, jsonify
+import os
 import pandas as pd
-import json
 from pathlib import Path
 import base64
-from io import BytesIO
 
 app = Flask(__name__)
 PROJECT_DIR = Path(__file__).parent
@@ -123,4 +122,5 @@ def server_error(error):
     return render_template('500.html', error=str(error)), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
