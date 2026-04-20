@@ -32,6 +32,9 @@ def encode_image(image_path):
 @app.route('/')
 def index():
     """Homepage with dashboard overview"""
+    if df is None:
+        return render_template('index.html', stats={}, top_products=[], error="Data not available"), 500
+    
     stats = {
         'total_products': len(df),
         'avg_price': f"${df['Price'].mean():.2f}",
@@ -51,6 +54,8 @@ def index():
 @app.route('/data')
 def data_page():
     """Data exploration page"""
+    if df is None:
+        return render_template('data.html', data='[]', columns=[], error="Data not available"), 500
     data_json = df.to_json(orient='records')
     return render_template('data.html', data=data_json, columns=list(df.columns))
 
@@ -76,6 +81,8 @@ def visualizations():
 @app.route('/api/stats')
 def get_stats():
     """API endpoint for statistics"""
+    if df is None:
+        return jsonify({'error': 'Data not available'}), 500
     return jsonify({
         'total_products': int(len(df)),
         'avg_price': float(df['Price'].mean()),
@@ -91,23 +98,34 @@ def get_stats():
     })
 
 @app.route('/api/products')
-def get_products():
+def if df is None:
+        return jsonify({'error': 'Data not available'}), 500
+    get_products():
     """API endpoint for all products"""
     return jsonify(df.to_dict('records'))
-
+if df is None:
+        return jsonify({'error': 'Data not available'}), 500
+    
 @app.route('/api/top-products')
 def get_top_products():
     """API endpoint for top rated products"""
     top = df.nlargest(10, 'Rating')[['Product Name', 'Price', 'Rating', 'Number of Reviews']]
     return jsonify(top.to_dict('records'))
-
+if df is None:
+        return jsonify({'error': 'Data not available'}), 500
+    
 @app.route('/api/best-value')
 def get_best_value():
     """API endpoint for best value products"""
     df_temp = df.copy()
     df_temp['price_pct'] = df_temp['Price'].rank(pct=True)
     df_temp['rating_pct'] = df_temp['Rating'].rank(pct=True)
-    df_temp['value'] = (df_temp['rating_pct'] + (1 - df_temp['price_pct'])) / 2
+    droute('/health')
+def health():
+    """Health check endpoint"""
+    return jsonify({'status': 'ok'}), 200
+
+@app.f_temp['value'] = (df_temp['rating_pct'] + (1 - df_temp['price_pct'])) / 2
     best = df_temp.nlargest(10, 'value')[['Product Name', 'Price', 'Rating', 'Category']]
     return jsonify(best.to_dict('records'))
 
